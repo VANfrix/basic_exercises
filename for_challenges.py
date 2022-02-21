@@ -33,18 +33,15 @@ is_male = {
     'Маша': False,
 }
 
-
 names = ['Оля', 'Петя', 'Вася', 'Маша']
-
-
-print(is_male['Оля'])
+print(is_male[1])
 
 
 print(names[0])
 print(names[1])
 print(names[2])
 print(names[3])
-# # ???
+# тупик!!!
 
 
 # Задание 4
@@ -81,4 +78,3 @@ groups = [
 ]
 print(f'Группа 1: {groups[0]}')
 print(f'Группа 1: {groups[1]}')
-# ???
