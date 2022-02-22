@@ -2,10 +2,11 @@
 # Необходимо вывести имена всех учеников из списка с новой строки
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
-print(names[0])
-print(names[1])
-print(names[2])
-print(names[3])
+for name in names:
+    print(name)
+# +
+
+
 # Задание 2
 # Необходимо вывести имена всех учеников из списка, рядом с именем показать количество букв в нём
 # Пример вывода:
@@ -13,14 +14,9 @@ print(names[3])
 # Петя: 4
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
-len_0 =len(names[0])
-print(f'{names[0]}: {len_0}')
-len_1 =len(names[1])
-print(f'{names[1]}: {len_1}')
-len_2 =len(names[2])
-print(f'{names[2]}: {len_2}')
-len_3 =len(names[3])
-print(f'{names[3]}: {len_3}')
+for name in names:
+    print(f'{name} {len(name)}')
+# +
 
 
 # Задание 3
@@ -34,14 +30,15 @@ is_male = {
 }
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
-print(is_male[1])
 
+for name in names:
+    male = is_male[name]
+    if male:
+        print(f'{name} мужской')
+    else:
+        print(f'{name} женский')
 
-print(names[0])
-print(names[1])
-print(names[2])
-print(names[3])
-# тупик!!!
+# +
 
 
 # Задание 4
@@ -56,13 +53,15 @@ groups = [
     ['Вася', 'Маша', 'Саша', 'Женя'],
     ['Оля', 'Петя', 'Гриша'],
 ]
-len_1 =len(groups)
-print(f'Всего {len_1} группы.')
-len_0_groupe = len(groups[0])
-print(f'Группа 1: {len_0_groupe} ученика.')
-len_1_groupe = len(groups[1])
-print(f'Группа 2: {len_1_groupe} ученика')
-# ???
+index = 1
+print(f'Всего {len(groups)} группы.')
+for groupe in groups:
+    delimiter = ", "
+    groupe_str1 = delimiter.join(groupe)
+    print(f'Группа {index} {groupe_str1} {len(groupe)}')
+    index += 1
+# как сделать вывод порядкового номера каждой группы?
+# +
 
 
 # Задание 5
@@ -76,5 +75,9 @@ groups = [
     ['Оля', 'Петя', 'Гриша'],
     ['Вася', 'Маша', 'Саша', 'Женя'],
 ]
-print(f'Группа 1: {groups[0]}')
-print(f'Группа 1: {groups[1]}')
+index = 1
+for groupe in groups:
+    groupe_str2 = ", ".join(groupe)
+    print(f'Группа {index} {groupe_str2}')
+    index += 1
+# +
