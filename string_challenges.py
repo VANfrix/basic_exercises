@@ -9,14 +9,19 @@ print(word[-1])
 # Вывести количество букв "а" в слове
 word = 'Архангельск'
 print(word.lower().count('а'))
-# +
+# # +
 
 # Вывести количество гласных букв в слове
 word = 'Архангельск'
-print(word.lower().count('е'))
-# застрял
+leters_1 = ['а', 'е']
+summ=0
+for leter in leters_1:
+    let_2 = (word.lower().count(leter))
+    summ=summ+let_2
+print(summ)
+# заморочено слишком, но вроде бы решил, позже попробую упростить!
 
-# Вывести количество слов в предложении
+# # Вывести количество слов в предложении
 sentence = 'Мы приехали в гости'
 print(len(sentence.split()))
 # +
@@ -35,5 +40,5 @@ summ =0
 for word in sred_1:
     summ = summ+len(word)
     sred=summ/len(sred_1)
-    print(sred)
-# не понимаю, что делаю не так, на созвоне этот код 
+print(sred)
+# +
