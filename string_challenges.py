@@ -41,4 +41,8 @@ for word in sred_1:
     summ = summ+len(word)
     sred=summ/len(sred_1)
 print(sred)
+<<<<<<< HEAD
 # +
+=======
+# +
+>>>>>>> c69d037240da4fe0dc9adb4a56b8b11f6d9b36aa

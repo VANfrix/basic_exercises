@@ -4,7 +4,7 @@
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 for name in names:
     print(name)
-# +
+# # +
 
 
 # Задание 2
@@ -40,6 +40,12 @@ for name in names:
 
 # +
 
+for name in names:
+    male = is_male[name]
+    if male:
+        print(f'{name} мужской')
+    else:
+        print(f'{name} женский')
 
 # Задание 4
 # Даны группу учеников. Нужно вывести количество групп и для каждой группы – количество учеников в ней
@@ -58,7 +64,7 @@ print(f'Всего {len(groups)} группы.')
 for groupe in groups:
     delimiter = ", "
     groupe_str1 = delimiter.join(groupe)
-    print(f'Группа {index} {groupe_str1} {len(groupe)}')
+    print(f'Группа: {index} - {len(groupe)} ученика')
     index += 1
 # +
 

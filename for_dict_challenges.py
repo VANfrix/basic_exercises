@@ -5,6 +5,8 @@
 # Маша: 2
 # Петя: 2
 
+
+
 students = [
     {'first_name': 'Вася'},
     {'first_name': 'Петя'},
@@ -12,7 +14,17 @@ students = [
     {'first_name': 'Маша'},
     {'first_name': 'Петя'},
 ]
-# ???
+name = {}
+for student in students:
+    name_student = student['first_name']
+    if name_student in name:
+        name[name_student]+=1
+    else:
+        name[name_student]=1
+for man in name:
+    print(man, name[man])
+       
+# +
 
 
 # Задание 2
@@ -26,6 +38,15 @@ students = [
     {'first_name': 'Маша'},
     {'first_name': 'Оля'},
 ]
+name = {}
+for student in students:
+    name_student = student['first_name']
+    if name_student in name:
+        name[name_student]+=1
+    else:
+        name[name_student]=1
+for man in name:
+    print(man, name[man])
 # ???
 
 
@@ -92,4 +113,3 @@ is_male = {
     'Миша': True,
 }
 # ???
-
