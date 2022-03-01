@@ -7,24 +7,24 @@
 
 
 
-students = [
-    {'first_name': 'Вася'},
-    {'first_name': 'Петя'},
-    {'first_name': 'Маша'},
-    {'first_name': 'Маша'},
-    {'first_name': 'Петя'},
-]
-name = {}
-for student in students:
-    name_student = student['first_name']
-    if name_student in name:
-        name[name_student]+=1
-    else:
-        name[name_student]=1
-for man in name:
-    print(man, name[man])
+# students = [
+#     {'first_name': 'Вася'},
+#     {'first_name': 'Петя'},
+#     {'first_name': 'Маша'},
+#     {'first_name': 'Маша'},
+#     {'first_name': 'Петя'},
+# ]
+# name = {}
+# for student in students:
+#     name_student = student['first_name']
+#     if name_student in name:
+#         name[name_student]+=1
+#     else:
+#         name[name_student]=1
+# for man in name:
+#     print(man, name[man])
        
-# +
+# # +
 
 
 # Задание 2
@@ -45,8 +45,18 @@ for student in students:
         name[name_student]+=1
     else:
         name[name_student]=1
+        print(name)
+summ = 0
 for man in name:
-    print(man, name[man])
+    summ_1= name_students.count()
+    summ += summ_1
+    # print(man, name[man])
+    print(summ)
+    # for man in name:
+    #     # max_repeat = max.name[man]
+        # print(name.values())
+        # print(name.keys())
+        # print(name.items())
 # ???
 
 
